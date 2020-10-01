@@ -1,2 +1,2 @@
 # kivyMdBasics
-Very basic mobile application with tables and toolbars
+Very basic mobile applications with tables and toolbars
