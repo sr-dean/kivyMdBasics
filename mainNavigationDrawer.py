@@ -17,7 +17,34 @@ Screen:
                         elevation: 11
                     Widget:
         MDNavigationDrawer: 
-            id: nav_drawer         
+            id: nav_drawer   
+            BoxLayout:
+                orientation:'vertical'
+                spacing: '8dp'#dp=display pixels
+                padding: '8dp'
+                Image:
+                    source: 'mePic.jpg'
+                MDLabel:
+                    text:'Stuart Dean'
+                    font_style:'Subtitle1'      
+                    size_hint_y:None
+                    height:self.texture_size[1]#reduces the size of the label to the size of the text
+                MDLabel:
+                    text:'sr-dean15@live.co.uk'
+                    font_style:'Caption'
+                    size_hint_y:None
+                    height:self.texture_size[1]
+                
+                ScrollView:#pushes all widgets to the top 
+                    MDList:
+                        OneLineIconListItem:
+                            text:'Go to race'
+                            IconLeftWidget:
+                                icon:'rowing'
+                        OneLineIconListItem:
+                            text:'Select difficulty'
+                            IconLeftWidget:
+                                icon:'android'
 
 """
 
